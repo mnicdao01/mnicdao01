@@ -1,0 +1,72 @@
+/*Background*/
+html {
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Link Color*/
+a {
+    color: rgba(46, 91, 138, 0.93);
+}
+
+a:visited {
+    color: rgba(46, 91, 138, 0.93);
+}
+
+a:hover {
+    color: rgba(58, 124, 183, 0.93);
+    text-decoration: none;
+}
+
+body {
+    background-color: transparent;
+}
+
+nav {
+    background-color: rgba(43, 43, 43, 0.100) !important;
+    border-bottom: .5px solid #669cdd;
+    border-radius: 0px !important;
+    margin-bottom: 20px;
+}
+
+#main-page {
+
+    background-color: transparent;
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.short-desc {
+    font-family: 'Sanchez', serif;
+    font-size: 20px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4.profile-name {
+    font-size: 39px;
+}
+
+.profile-sub {
+    font-size: 15px;
+}
+
+.img-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+
+
+/*Footer*/
+
+.footer-notes {
+    font-size: 10px;
+    text-align: center;
+}
