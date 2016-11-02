@@ -23,7 +23,9 @@
         <script src="{{ asset('js/jquery.easings.min.js') }}"></script>
         <script src="{{ asset('js/scrolloverflow.min.js') }}"></script>
         <script src="{{ asset('js/jquery.fullPage.js') }}"></script>
+        <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
         <script>
             $(document).ready(function() {
                 $('#fullpage').fullpage({
@@ -33,9 +35,15 @@
                     //Accessibility
                     keyboardScrolling: true,
                     continuousVertical: true,
-                    anchors:['home','develop', 'implement', 'maintain', 'secure']
+                    anchors:['home','develop', 'admin']
                 });
             });
+
+            $(window).on('load', function() {
+              $('#status').fadeOut();
+              $('#preloader').delay(350).fadeOut('slow');
+              $('body').delay(350).css({'overflow':'visible'});
+            })
         </script>
     </body>
 </html>

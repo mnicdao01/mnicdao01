@@ -1,9 +1,10 @@
 
 @include('partials._head')
-{{--@include('partials._nav')--}}
-{{--@include('partials._nav')--}}
+<div id="preloader">
+  <div id="status"></div>
+  <div id="preloader-message">Hello</div>
+</div>
 
-{{--        @include('partials._messages')--}}
 @yield('content')
 
 

@@ -58,20 +58,24 @@ nav {
 
 h4.profile-name {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     color: #f1debe;
+    -vendor-animation-duration: 5s;
+    -vendor-animation-delay: 5s;
 }
 
 h3.sub-title {
     font-size: 29px;
     font-stretch: condensed;
-
+    -vendor-animation-duration: 5s;
+    -vendor-animation-delay: 5s;
 }
 
 
 .profile-sub {
     font-size: 15px;
-
+    -vendor-animation-duration: 5s;
+    -vendor-animation-delay: 5s;
 }
 
 .img-profile {
@@ -93,7 +97,7 @@ h3.sub-title {
 
 .img-dev {
     width: 150px;
-    height: 150px;
+    /*height: 150px;*/
 }
 
 h1.title-dev {
@@ -107,3 +111,47 @@ h1.title-dev {
 
 /*Footer*/
 
+.dev-slide-1 {
+    overflow-y: scroll;
+}
+
+body {
+    overflow: hidden;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(212, 193, 165);
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../img/gears.svg);
+
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+#preloader-message {
+    position: fixed;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+}
