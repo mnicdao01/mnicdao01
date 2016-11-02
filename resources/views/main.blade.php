@@ -1,12 +1,10 @@
+
 @include('partials._head')
 {{--@include('partials._nav')--}}
-@include('partials._nav')
-   <div class="container">
+{{--@include('partials._nav')--}}
 
-        @include('partials._messages')
-        @yield('content')
-         <hr>
+{{--        @include('partials._messages')--}}
+@yield('content')
 
-   </div>
 
 @include('partials._footer')

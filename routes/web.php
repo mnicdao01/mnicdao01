@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    $profile['fullname'] = 'Mark Wilson Nicdao';
+    $profile['fullname'] = 'MARK NICDAO';
     $profile['image'] = 'img/profile.jpg';
     return view('pages.index')->withProfile($profile);
 });

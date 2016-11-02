@@ -1,10 +1,11 @@
 /*Background*/
 html {
-    background: url(../img/bg.png) no-repeat center center fixed;
+    background: url(../img/me.jpg) no-repeat center center fixed;
+    background-size: auto 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 /*Link Color*/
 a {
@@ -16,7 +17,7 @@ a:visited {
 }
 
 a:hover {
-    color: rgba(58, 124, 183, 0.93);
+    color: rgba(252, 255, 252, 0.93);
     text-decoration: none;
 }
 
@@ -28,7 +29,8 @@ nav {
     background-color: rgba(43, 43, 43, 0.100) !important;
     border-bottom: .5px solid #669cdd;
     border-radius: 0px !important;
-    margin-bottom: 20px;
+
+    z-index: 99;
 }
 
 #main-page {
@@ -41,32 +43,67 @@ nav {
 
 .short-desc {
     font-family: 'Sanchez', serif;
-    font-size: 20px;
-    width: 450px;
+    color: #ebd8ba;
+    font-size: 18px;
+    width: 550px;
     margin-left: auto;
     margin-right: auto;
 }
 
-h4.profile-name {
-    font-size: 39px;
+.short-desc b{
+    color: #372d3d;
+    text-decoration: none;
 }
+
+
+h4.profile-name {
+    font-weight: bold;
+    font-size: 45px;
+    color: #f1debe;
+}
+
+h3.sub-title {
+    font-size: 29px;
+    font-stretch: condensed;
+
+}
+
 
 .profile-sub {
     font-size: 15px;
+
 }
 
 .img-profile {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 
+#section1 {
+    background-color: rgba(209, 206, 208, 0.9);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.img-dev {
+    width: 150px;
+    height: 150px;
+}
+
+h1.title-dev {
+    margin-top: 20px;
+}
+
+#dev-footnote {
+    font-size: 12px;
+}
 
 
 /*Footer*/
 
-.footer-notes {
-    font-size: 10px;
-    text-align: center;
-}
