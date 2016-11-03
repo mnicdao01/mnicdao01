@@ -16,3 +16,5 @@ Route::get('/', function () {
     $profile['image'] = 'img/profile.jpg';
     return view('pages.index')->withProfile($profile);
 });
+
+Route::resource('contacts', 'ContactsController', ['only' => ['store']]);

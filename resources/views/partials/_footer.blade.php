@@ -35,7 +35,7 @@
                     //Accessibility
                     keyboardScrolling: true,
                     continuousVertical: true,
-                    anchors:['home','develop', 'admin']
+                    anchors:['home','develop', 'admin', 'contact']
                 });
             });
 

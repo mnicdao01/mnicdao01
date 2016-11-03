@@ -158,5 +158,37 @@
 
             </div>
 </div>
+
+
+<div class="section" id="section3">
+    <div class="container">
+            <br>
+            <h1 class="title-dev">Contact Me</h1>
+            <hr>
+            <p class="text-center">Developing a full blown professional website or a web application is not that easy and it should consider the following criteria. From functionality, speed, user requirements and user experience. Currently this site was developed using PHP with the latest framework Laravel 5.3 and using the latest CSS3 Framework Bootstrap 4. Listed below are the technology I am using in creating such beautiful web applications.</p>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-6">
+                            <form method="POST" action="{{ route('contacts.store') }}">
+                                {{ csrf_field() }}
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                                <label for="email">Email:</label>
+                                <input type="text" class="form-control" id="email" name="email">
+                                <label for="subject">Subject:</label>
+                                <input type="text" class="form-control" id="subject" name="subject">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" class="form-control"></textarea>
+
+                                <input type="submit" class="btn btn-success btn-top-margin" value="Send Message">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
 </div>
 @endsection
