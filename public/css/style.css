@@ -45,9 +45,7 @@ nav {
     font-family: 'Sanchez', serif;
     color: #ebd8ba;
     font-size: 18px;
-    width: 550px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .short-desc b{
@@ -167,4 +165,17 @@ h1.title-dev {
 
 .btn-top-margin {
     margin-top: 10px;
+}
+
+.insta-post-latest{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.insta-title {
+    color: #372d3d;
 }

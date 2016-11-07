@@ -9,22 +9,33 @@
 
                         <div class="row">
                             <div class="col-xs-12">
-                                {{--<div class="profile-image">--}}
-                                    {{--<img src="{{ asset($profile['image']) }}" class="img-profile"/>--}}
-                                {{--</div>--}}
-
-                                <div class="title">
-                                    <h4 class="profile-name animated fadeInDown"> {{ $profile['fullname'] }}</h4>
-                                    <h3 class="sub-title animated fadeInUp">Web Developer | Server Administrator</h3>
-                                    <p class="short-desc animated fadeInUp">
-                                        "Hi I am <b>Mark Nicdao</b>, I am a <b>System or Web Developer</b> and a <b>Server Administrator</b> as well.
-                                        I am 29 years old and I really love exploring new technologies, <b>developing, implementing, maintaining and securing</b>
-                                        websites and web applications."
-                                    </p>
+                                <div class="profile-image hidden-md-up hidden-lg-up">
+                                    <img src="{{ $response['data'][0]['caption']['from']['profile_picture'] }}" class="img-profile"/>
                                 </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="profile-name animated fadeInDown"> {{ $profile['fullname'] }}</h4>
+                                <h3 class="sub-title animated fadeInUp">Web Developer | Server Administrator</h3>
+                            </div>
+                            <div class="col-md-6 offset-md-3 short-desc ">
+                                "Hi I am <b>Mark Nicdao</b>, I am a <b>Web Developer</b> and a <b>Server Administrator</b> as well.
+                                I am 29 years old and I really love exploring new technologies, <b>developing, implementing, maintaining and securing</b>
+                                websites, web applications and web servers."
+                            </div>
+{{--                            {{ dd($response) }}--}}
+                            <div class="col-md-12 hidden-xs-down">
+                            <h5 class="insta-title">My Latest Instagram Photos</h5>
+                            @foreach($response['data'] as $res)
+                                 @if($loop->iteration <= 3)
+                                        <a href="{{ $res['link'] }}"><img class="img-responsive insta-post-latest" src="{{ $res['images']['low_resolution']['url'] }}" alt=""></a>
+
+                                 @endif
+                            @endforeach
+
+                            </div>
 
 
-                                </div>
+
                         </div>
 
 
@@ -40,22 +51,62 @@
         <br>
         <h1 class="title-dev">I as a Developer</h1>
         <hr>
-        <p class="text-center">Developing a full blown professional website or a web application is not that easy and it should consider the following criteria. From functionality, speed, user requirements and user experience. Currently this site was developed using PHP with the latest framework Laravel 5.3 and using the latest CSS3 Framework Bootstrap 4. Listed below are the technology I am using in creating such beautiful web applications.</p>
+
         <div class="slide fp-auto-height" id="dev-slide-1">
             <div class="container">
              <h3>Web Development Technologies and Frameworks</h3>
-             <br>
+             <p class="text-center">Developing a full blown professional website or a web application is not that easy and it should consider the following criteria. From functionality, speed, user requirements and user experience. Currently this site was developed using PHP with the latest framework Laravel 5.3 and using the latest CSS3 Framework Bootstrap 4. Listed below are the technology I am using in creating such beautiful web applications.</p>
                 <div class="row">
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/><p>HTML5</p></div>
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/css3.png') }}" class="img-fluid img-dev"/><p>CSS3</p></div>
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/php.png') }}" class="img-fluid img-dev"/><p>PHP</p></div>
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/javascript.png') }}" class="img-fluid img-dev"/><p>JAVASCRIPT</p></div>
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/laravel.png') }}" class="img-fluid img-dev"/><p>LARAVEL</p></div>
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/laravel.png') }}" class="img-fluid img-dev"/><p>CODEIGNITER</p></div>
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/><p>JQUERY</p></div>
-                    <div class="col-xs-3 col-md-3"><img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/><p>BOOTSTRAP 3 & 4</p></div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/>
+                        <p>HTML5</p>
+                        </center>
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/css3.png') }}" class="img-fluid img-dev"/>
+                        <p>CSS3</p>
+                        </center>
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/php.png') }}" class="img-fluid img-dev"/>
+                        <p>PHP</p>
+                        </center>
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/javascript.png') }}" class="img-fluid img-dev"/>
+                        <p>JAVASCRIPT</p>
+                        </center>
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/laravel.png') }}" class="img-fluid img-dev"/>
+                        <p>LARAVEL</p>
+                        </center>
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/laravel.png') }}" class="img-fluid img-dev"/>
+                        <p>CODEIGNITER</p>
+                        </center>
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/>
+                        <p>JQUERY</p>
+                        </center>
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <center>
+                        <img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/>
+                        <p>BOOTSTRAP 3 & 4</p>
+                        </center>
+                    </div>
                 </div>
-                Others:
+                {{--Others:--}}
                 <div class="row hidden-xs-down" id="dev-footnote">
 
                     <div class="col-xs-2">
@@ -165,7 +216,7 @@
             <br>
             <h1 class="title-dev">Contact Me</h1>
             <hr>
-            <p class="text-center">Developing a full blown professional website or a web application is not that easy and it should consider the following criteria. From functionality, speed, user requirements and user experience. Currently this site was developed using PHP with the latest framework Laravel 5.3 and using the latest CSS3 Framework Bootstrap 4. Listed below are the technology I am using in creating such beautiful web applications.</p>
+            <p class="text-center">I will be glad to know about your feedbacks. Please feel free to give me a message or email me at <a href="mailto:dev@marknicdao.info">dev@marknicdao.info</a></p>
 
             <div class="row">
                 <div class="col-md-12">

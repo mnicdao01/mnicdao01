@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    $profile['fullname'] = 'MARK NICDAO';
-    $profile['image'] = 'img/profile.jpg';
-    return view('pages.index')->withProfile($profile);
-});
+//Route::get('/', function () {
+//    $profile['fullname'] = 'MARK NICDAO';
+//    $profile['image'] = 'img/profile.jpg';
+//
+//    return view('pages.index')->withProfile($profile);
+//});
 
 Route::resource('contacts', 'ContactsController', ['only' => ['store']]);
+Route::get('/', 'HomeController@getaccesstoken');

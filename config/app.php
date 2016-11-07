@@ -178,6 +178,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+//        Instagram oAuth 2
+        Ramsey\Laravel\OAuth2\Instagram\InstagramServiceProvider::class
+
     ],
 
     /*
@@ -225,6 +228,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+//        Instagram oAuth 2 Alias
+        'Instagram' => Ramsey\Laravel\OAuth2\Instagram\Facades\Instagram::class
 
     ],
 

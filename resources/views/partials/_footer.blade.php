@@ -32,6 +32,11 @@
                     //Scrolling
                     loopBottom: true,
                     touchSensitivity: 15,
+                    css3: true,
+                    fitToSection: true,
+//                    scrollBar: true,
+//                    scrollHorizontally: true,
+                    scrollOverflow: true,
                     //Accessibility
                     keyboardScrolling: true,
                     continuousVertical: true,
@@ -43,7 +48,11 @@
               $('#status').fadeOut();
               $('#preloader').delay(350).fadeOut('slow');
               $('body').delay(350).css({'overflow':'visible'});
-            })
+            });
+
+
+
+
         </script>
     </body>
 </html>
