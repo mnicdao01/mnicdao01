@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="{{ asset('css/animate.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('css/jquery.fullPage.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/jquery.fullpage.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
