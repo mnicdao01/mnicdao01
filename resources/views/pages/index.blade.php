@@ -60,99 +60,222 @@
              Currently this site was developed using PHP with the latest framework Laravel 5.3 and using the latest
              CSS3 Framework Bootstrap 4. Listed below are the technology I am using in creating such beautiful web applications.</p>
              <div class="row">
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/>
-                                     <p>HTML5</p>
-                                     </center>
-                                 </div>
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/css3.png') }}" class="img-fluid img-dev"/>
-                                     <p>CSS3</p>
-                                     </center>
-                                 </div>
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/php.png') }}" class="img-fluid img-dev"/>
-                                     <p>PHP</p>
-                                     </center>
-                                 </div>
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/javascript.png') }}" class="img-fluid img-dev"/>
-                                     <p>JAVASCRIPT</p>
-                                     </center>
-                                 </div>
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/laravel.png') }}" class="img-fluid img-dev"/>
-                                     <p>LARAVEL</p>
-                                     </center>
-                                 </div>
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/laravel.png') }}" class="img-fluid img-dev"/>
-                                     <p>CODEIGNITER</p>
-                                     </center>
-                                 </div>
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/>
-                                     <p>JQUERY</p>
-                                     </center>
-                                 </div>
-                                 <div class="col-xs-3 col-md-3">
-                                     <center>
-                                     <img src="{{ asset('img/logos/html5.png') }}" class="img-fluid img-dev"/>
-                                     <p>BOOTSTRAP 3 & 4</p>
-                                     </center>
-                                 </div>
-                             </div>
-                             {{--Others:--}}
-                             <div class="row hidden-xs-down" id="dev-footnote">
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="wrapper-radial">
 
-                                 <div class="col-xs-2">
-                                 <b>Languages:</b>
-                                     <ul>
-                                         <li>Java</li>
-                                         <li>Objective C - xCode</li>
-                                         <li>Visual Basic</li>
-                                     </ul>
-                                 </div>
-                                 <div class="col-xs-2">
-                                 <b>Frameworks:</b>
-                                     <ul>
-                                         <li>Grails on Groovy</li>
-                                         <li>Swift</li>
-                                         <li>Ruby on Rails</li>
-                                     </ul>
-                                 </div>
-                                 <div class="col-xs-2">
-                                 <b>Tools for UX|UI:</b>
-                                     <ul>
-                                         <li>UXPin</li>
-                                         <li>BrowserStack</li>
-                                         <li>Balsamiq Mockups</li>
-                                     </ul>
-                                 </div>
-                                 <div class="col-xs-2">
-                                 <b>Version Control Systems:</b>
-                                      <ul>
-                                          <li>Mercurial</li>
-                                          <li>Github</li>
+                                <div class="radial-progress" data-progress="100" data-value="HTML">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
 
-                                      </ul>
-                                 </div>
-                                 <div class="col-xs-2">
-                                 <b>Used to:</b>
-                                       <ul>
-                                           <li>Rest-API</li>
-                                           <li>MVC Architecture</li>
-                                           <li>Social Media APIs</li>
-                                       </ul>
-                                 </div>
+                                        <div class="percentage">
+                                            <div class="inset-logo">
+                                                <img src="img/logos/html5.png"/>
+                                            </div>
+
+                                            <p>HTML5</p>
+                                        </div>
+                                    </div>
+                                </div>
                              </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="wrapper-radial">
+                                 <div class="radial-progress" data-progress="100" data-value="HTML">
+                                        <div class="circle">
+                                            <div class="mask full">
+                                                <div class="fill"></div>
+                                            </div>
+                                            <div class="mask half">
+                                                <div class="fill"></div>
+                                                <div class="fill fix"></div>
+                                            </div>
+                                            <div class="shadow"></div>
+                                        </div>
+                                        <div class="inset">
+
+                                            <div class="percentage"><div class="inset-logo"><img src="img/logos/css3.png"/></div></div>
+                                        </div>
+                                    </div>
+                                 </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                         <div class="wrapper-radial">
+                              <div class="radial-progress" data-progress="100" data-value="HTML">
+                                     <div class="circle">
+                                         <div class="mask full">
+                                             <div class="fill"></div>
+                                         </div>
+                                         <div class="mask half">
+                                             <div class="fill"></div>
+                                             <div class="fill fix"></div>
+                                         </div>
+                                         <div class="shadow"></div>
+                                     </div>
+                                     <div class="inset">
+
+                                         <div class="percentage"><div class="inset-logo"><img src="img/logos/php.png"/></div></div>
+                                     </div>
+                                 </div>
+                              </div>
+
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="wrapper-radial">
+                                  <div class="radial-progress" data-progress="85" data-value="HTML">
+                                         <div class="circle">
+                                             <div class="mask full">
+                                                 <div class="fill"></div>
+                                             </div>
+                                             <div class="mask half">
+                                                 <div class="fill"></div>
+                                                 <div class="fill fix"></div>
+                                             </div>
+                                             <div class="shadow"></div>
+                                         </div>
+                                         <div class="inset">
+
+                                             <div class="percentage"><div class="inset-logo"><img src="img/logos/javascript.png"/></div></div>
+                                         </div>
+                                     </div>
+                                  </div>
+
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                              <div class="wrapper-radial">
+                               <div class="radial-progress" data-progress="90" data-value="HTML">
+                                      <div class="circle">
+                                          <div class="mask full">
+                                              <div class="fill"></div>
+                                          </div>
+                                          <div class="mask half">
+                                              <div class="fill"></div>
+                                              <div class="fill fix"></div>
+                                          </div>
+                                          <div class="shadow"></div>
+                                      </div>
+                                      <div class="inset">
+
+                                          <div class="percentage"><div class="inset-logo"><img src="img/logos/laravel.png"/></div></div>
+                                      </div>
+                                  </div>
+                               </div>
+
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="wrapper-radial">
+                                <div class="radial-progress" data-progress="90" data-value="HTML">
+                                       <div class="circle">
+                                           <div class="mask full">
+                                               <div class="fill"></div>
+                                           </div>
+                                           <div class="mask half">
+                                               <div class="fill"></div>
+                                               <div class="fill fix"></div>
+                                           </div>
+                                           <div class="shadow"></div>
+                                       </div>
+                                       <div class="inset">
+
+                                           <div class="percentage"><div class="inset-logo"><img src="img/logos/laravel.png"/></div></div>
+                                       </div>
+                                   </div>
+                            </div>
+
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="wrapper-radial">
+                                 <div class="radial-progress" data-progress="90" data-value="HTML">
+                                        <div class="circle">
+                                            <div class="mask full">
+                                                <div class="fill"></div>
+                                            </div>
+                                            <div class="mask half">
+                                                <div class="fill"></div>
+                                                <div class="fill fix"></div>
+                                            </div>
+                                            <div class="shadow"></div>
+                                        </div>
+                                        <div class="inset">
+
+                                            <div class="percentage"><div class="inset-logo"><img src="img/logos/laravel.png"/></div></div>
+                                        </div>
+                                    </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="wrapper-radial">
+                                 <div class="radial-progress" data-progress="90" data-value="HTML">
+                                        <div class="circle">
+                                            <div class="mask full">
+                                                <div class="fill"></div>
+                                            </div>
+                                            <div class="mask half">
+                                                <div class="fill"></div>
+                                                <div class="fill fix"></div>
+                                            </div>
+                                            <div class="shadow"></div>
+                                        </div>
+                                        <div class="inset">
+
+                                            <div class="percentage"><div class="inset-logo"><img src="img/logos/laravel.png"/></div></div>
+                                        </div>
+                                    </div>
+                             </div>
+                         </div>
+                     </div>
+                     {{--Others:--}}
+                     <div class="row hidden-xs-down" id="dev-footnote">
+
+                         <div class="col-xs-2">
+                         <b>Languages:</b>
+                             <ul>
+                                 <li>Java</li>
+                                 <li>Objective C - xCode</li>
+                                 <li>Visual Basic</li>
+                             </ul>
+                         </div>
+                         <div class="col-xs-2">
+                         <b>Frameworks:</b>
+                             <ul>
+                                 <li>Grails on Groovy</li>
+                                 <li>Swift</li>
+                                 <li>Ruby on Rails</li>
+                             </ul>
+                         </div>
+                         <div class="col-xs-2">
+                         <b>Tools for UX|UI:</b>
+                             <ul>
+                                 <li>UXPin</li>
+                                 <li>BrowserStack</li>
+                                 <li>Balsamiq Mockups</li>
+                             </ul>
+                         </div>
+                         <div class="col-xs-2">
+                         <b>Version Control Systems:</b>
+                              <ul>
+                                  <li>Mercurial</li>
+                                  <li>Github</li>
+
+                              </ul>
+                         </div>
+                         <div class="col-xs-2">
+                         <b>Used to:</b>
+                               <ul>
+                                   <li>Rest-API</li>
+                                   <li>MVC Architecture</li>
+                                   <li>Social Media APIs</li>
+                               </ul>
+                         </div>
+                     </div>
 
 
 
